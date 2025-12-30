@@ -52,7 +52,7 @@ const Header: React.FC<HeaderProps> = ({ onNavigate }) => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-24">
           <div className="flex-shrink-0 cursor-pointer" onClick={(e) => handleNavClick('home', null, e)}>
-            <Logo />
+            <Logo showText={false} />
           </div>
           
           <nav className="hidden lg:flex lg:items-center lg:space-x-8">
