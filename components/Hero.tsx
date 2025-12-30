@@ -6,7 +6,7 @@ const Hero: React.FC = () => {
     <section className="relative h-[600px] md:h-[700px] text-white">
       <div className="absolute inset-0">
         <img
-          src="/hero-bg.jfif"
+          src="images/hero-bg.jfif"
           alt="Industrial power solutions background"
           className="w-full h-full object-cover"
         />

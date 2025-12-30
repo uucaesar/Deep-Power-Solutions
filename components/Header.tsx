@@ -4,7 +4,7 @@ import Logo from './Logo';
 import { ChevronDownIcon, MenuIcon, XIcon } from './Icons';
 
 interface HeaderProps {
-  onNavigate: (page: string) => void;
+  onNavigate: (page: string, id?: string | null) => void;
 }
 
 const Header: React.FC<HeaderProps> = ({ onNavigate }) => {
@@ -13,20 +13,9 @@ const Header: React.FC<HeaderProps> = ({ onNavigate }) => {
 
   const handleNavClick = (page: string, id: string | null = null, e: React.MouseEvent) => {
     e.preventDefault();
-    onNavigate(page);
     setIsMenuOpen(false); // Close mobile menu if open
-
-    if (id) {
-      // Small timeout to allow the new page to render before scrolling
-      setTimeout(() => {
-        const element = document.getElementById(id);
-        if (element) {
-          element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
-      }, 100);
-    } else {
-      window.scrollTo(0, 0);
-    }
+    // Delegate all navigation and scrolling logic to the parent component
+    onNavigate(page, id); 
   };
 
   const toggleMobileSubMenu = (name: string, e: React.MouseEvent) => {
