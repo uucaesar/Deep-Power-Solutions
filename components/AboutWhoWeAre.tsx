@@ -28,7 +28,7 @@ const AboutWhoWeAre: React.FC = () => {
           {/* Image */}
           <div className="relative h-[400px] lg:h-[600px] w-full rounded-2xl overflow-hidden shadow-2xl">
              <img
-              src="https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?q=80&w=2070&auto=format&fit=crop"
+              src="https://i.ibb.co/whTV5rZ3/about-second.jpg"
               alt="Engineers reviewing plans in front of industrial machinery"
               className="w-full h-full object-cover"
             />

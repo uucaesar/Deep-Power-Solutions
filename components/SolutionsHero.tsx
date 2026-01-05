@@ -7,7 +7,7 @@ const SolutionsHero: React.FC = () => {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img
-          src="https://images.unsplash.com/photo-1469022563428-aa04fef9f5a2?q=80&w=2073&auto=format&fit=crop"
+          src="assets/solutions-hero.jpeg"
           alt="Engineering Power Lines Structure"
           className="w-full h-full object-cover"
         />

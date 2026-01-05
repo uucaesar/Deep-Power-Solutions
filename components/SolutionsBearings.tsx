@@ -17,7 +17,7 @@ const SolutionsBearings: React.FC = () => {
           {/* Left Column: Image (Zig-zag layout) */}
           <div className="order-2 lg:order-1 relative h-[600px] w-full rounded-2xl overflow-hidden shadow-2xl">
             <img 
-              src="https://images.unsplash.com/photo-1565514020120-b79e7c3e34b8?q=80&w=2070&auto=format&fit=crop" 
+              src="assets/bearings-rotating.jpeg" 
               alt="Precision Industrial Ball Bearing" 
               className="w-full h-full object-cover"
             />

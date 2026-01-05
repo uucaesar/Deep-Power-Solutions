@@ -91,7 +91,7 @@ const SolutionsTechnicalServices: React.FC = () => {
           {/* Image - Right */}
           <div className="relative h-[600px] w-full rounded-2xl overflow-hidden shadow-2xl">
             <img 
-              src="https://images.unsplash.com/photo-1593941707882-a5bba14938c7?q=80&w=2072&auto=format&fit=crop" 
+              src="https://i.ibb.co/FLsRcFyZ/tecnical-consultancy.jpg" 
               alt="Engineer with tablet inspecting industrial facility" 
               className="w-full h-full object-cover"
             />

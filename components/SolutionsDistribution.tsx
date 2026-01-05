@@ -103,7 +103,7 @@ const SolutionsDistribution: React.FC = () => {
           {/* Right Column: Image */}
           <div className="relative h-[600px] w-full rounded-2xl overflow-hidden shadow-2xl">
             <img 
-              src="https://images.unsplash.com/photo-1621255562767-33e387198758?q=80&w=2070&auto=format&fit=crop" 
+              src="assets/electrical-distribution.jpeg" 
               alt="Electrical Switchgear Room" 
               className="w-full h-full object-cover"
             />

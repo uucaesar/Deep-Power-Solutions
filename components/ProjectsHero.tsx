@@ -7,7 +7,7 @@ const ProjectsHero: React.FC = () => {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img
-          src="https://images.unsplash.com/photo-1518709594023-6eab9bab7b23?q=80&w=2545&auto=format&fit=crop"
+          src="https://i.ibb.co/fY3y8hjv/projects-hero.jpg"
           alt="Mining operation at night with floodlights"
           className="w-full h-full object-cover"
         />

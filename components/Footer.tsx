@@ -2,7 +2,11 @@
 import React from 'react';
 import { MailIcon, PhoneIcon, LocationIcon } from './Icons';
 
-const Footer: React.FC = () => {
+interface FooterProps {
+  onNavigate: (page: string, id?: string | null) => void;
+}
+
+const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
   return (
     <footer className="bg-brand-dark-blue text-white pt-20 pb-10">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -31,11 +35,11 @@ const Footer: React.FC = () => {
           <div className="lg:pl-12">
             <h3 className="font-bold text-2xl mb-6">Quick Links</h3>
             <ul className="space-y-3 text-gray-300 text-lg">
-              <li><a href="#" className="hover:text-brand-blue hover:text-white transition-colors">Home</a></li>
-              <li><a href="#" className="hover:text-brand-blue hover:text-white transition-colors">Services</a></li>
-              <li><a href="#" className="hover:text-brand-blue hover:text-white transition-colors">Bearings</a></li>
-              <li><a href="#" className="hover:text-brand-blue hover:text-white transition-colors">Projects</a></li>
-              <li><a href="#" className="hover:text-brand-blue hover:text-white transition-colors">Contact</a></li>
+              <li><a href="#" onClick={(e) => { e.preventDefault(); onNavigate('home'); }} className="hover:text-brand-blue hover:text-white transition-colors">Home</a></li>
+              <li><a href="#" onClick={(e) => { e.preventDefault(); onNavigate('solutions'); }} className="hover:text-brand-blue hover:text-white transition-colors">Services</a></li>
+              <li><a href="#" onClick={(e) => { e.preventDefault(); onNavigate('solutions', 'bearings'); }} className="hover:text-brand-blue hover:text-white transition-colors">Bearings</a></li>
+              <li><a href="#" onClick={(e) => { e.preventDefault(); onNavigate('projects'); }} className="hover:text-brand-blue hover:text-white transition-colors">Projects</a></li>
+              <li><a href="#" onClick={(e) => { e.preventDefault(); onNavigate('contact'); }} className="hover:text-brand-blue hover:text-white transition-colors">Contact</a></li>
             </ul>
           </div>
 
@@ -45,22 +49,22 @@ const Footer: React.FC = () => {
             <ul className="space-y-4 text-gray-300 text-lg">
               <li className="flex items-center">
                 <MailIcon className="h-5 w-5 mr-3 flex-shrink-0" />
-                <span>info@deeppowersolutions.com</span>
+                <a href="mailto:info@deeppowersolutions.co.za" className="hover:text-brand-blue hover:text-white transition-colors">info@deeppowersolutions.co.za</a>
               </li>
               <li className="flex items-center">
                 <PhoneIcon className="h-5 w-5 mr-3 flex-shrink-0" />
-                <span>+27 11 123 4567</span>
+                <a href="tel:+27767371964" className="hover:text-brand-blue hover:text-white transition-colors">+27 76 737 1964</a>
               </li>
               <li className="flex items-start">
                 <LocationIcon className="h-5 w-5 mr-3 mt-1 flex-shrink-0" />
-                <span>Johannesburg, South Africa</span>
+                <span>Stand No 20, Malelane, 1320</span>
               </li>
             </ul>
           </div>
         </div>
 
         <div className="border-t border-gray-700 mt-16 pt-8 text-center text-gray-400 text-sm">
-          Copyright 2025 Deep Power Solutions | Privacy Policy.
+          Copyright 2026 Deep Power Solutions
         </div>
       </div>
     </footer>

@@ -19,24 +19,24 @@ const SolutionsMiningOilGas: React.FC = () => {
           <div className="order-2 lg:order-1 flex flex-col space-y-6">
              <div className="relative h-[280px] md:h-[350px] w-full rounded-2xl overflow-hidden shadow-xl group">
                 <img
-                  src="https://images.unsplash.com/photo-1579547945413-497e1b99dac0?q=80&w=2070&auto=format&fit=crop"
+                  src="assets/mining-capabilities.jpeg"
                   alt="Open Pit Mine"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                 <div className="absolute bottom-4 left-6">
-                  <p className="text-white font-bold text-lg uppercase tracking-wider">Mining</p>
+                  <p className="text-white font-bold text-lg uppercase tracking-wider"></p>
                 </div>
              </div>
              <div className="relative h-[280px] md:h-[350px] w-full rounded-2xl overflow-hidden shadow-xl group">
                 <img
-                  src="https://images.unsplash.com/photo-1566996694954-90b052c413c4?q=80&w=2070&auto=format&fit=crop"
+                  src="assets/oil-capabilities.jpeg"
                   alt="Oil Refinery"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                  <div className="absolute bottom-4 left-6">
-                  <p className="text-white font-bold text-lg uppercase tracking-wider">Oil & Gas</p>
+                  <p className="text-white font-bold text-lg uppercase tracking-wider"></p>
                 </div>
              </div>
           </div>

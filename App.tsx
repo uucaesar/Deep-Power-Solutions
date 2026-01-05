@@ -90,9 +90,9 @@ const App: React.FC = () => {
       <main className="pt-24 animate-fade-in">
         {currentPage === 'home' && (
           <div className="animate-fade-in">
-            <Hero />
+            <Hero onNavigate={handlePageNavigation} />
             <About />
-            <Services />
+            <Services onNavigate={handlePageNavigation} />
             <Why />
             <Brands />
             <HomeMineImage />
@@ -103,7 +103,7 @@ const App: React.FC = () => {
             <AboutHero />
             <AboutWhoWeAre />
             <AboutPhilosophy />
-            <AboutWhyChooseUs />
+            <AboutWhyChooseUs onNavigate={handlePageNavigation} />
             <AboutCoreCapabilities />
           </div>
         )}
@@ -127,7 +127,7 @@ const App: React.FC = () => {
             {/* Placeholder for future project case studies */}
             <div className="py-20 text-center bg-gray-50">
                <div className="container mx-auto px-4">
-                 <p className="text-xl text-gray-500">Detailed Project Case Studies coming soon.</p>
+                 <p className="text-xl text-gray-500">Under construction</p>
                </div>
             </div>
           </div>
@@ -144,7 +144,7 @@ const App: React.FC = () => {
            </div>
         )}
       </main>
-      {!isLoading && <Footer />}
+      {!isLoading && <Footer onNavigate={handlePageNavigation} />}
     </div>
   );
 };

@@ -19,7 +19,11 @@ const UserIcon = ({ className }: { className?: string }) => (
   </svg>
 );
 
-const AboutWhyChooseUs: React.FC = () => {
+interface AboutWhyChooseUsProps {
+  onNavigate: (page: string, id?: string | null) => void;
+}
+
+const AboutWhyChooseUs: React.FC<AboutWhyChooseUsProps> = ({ onNavigate }) => {
   return (
     <section className="relative py-20 lg:py-28 overflow-hidden bg-brand-dark-blue text-white">
       {/* Background Image with Overlay */}
@@ -49,7 +53,11 @@ const AboutWhyChooseUs: React.FC = () => {
                 From concept to operation, we are ready to support your project.
               </span>
             </h3>
-            <a href="#" className="inline-block px-10 py-4 bg-[#FF5722] hover:bg-[#E64A19] text-white font-bold rounded-md transition-colors text-lg shadow-lg uppercase tracking-wide">
+            <a 
+              href="#" 
+              onClick={(e) => { e.preventDefault(); onNavigate('contact'); }}
+              className="inline-block px-10 py-4 bg-[#FF5722] hover:bg-[#E64A19] text-white font-bold rounded-md transition-colors text-lg shadow-lg uppercase tracking-wide"
+            >
               Contact Our Team
             </a>
           </div>

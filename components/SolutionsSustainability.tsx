@@ -79,7 +79,7 @@ const SolutionsSustainability: React.FC = () => {
           {/* Image - Right */}
           <div className="relative h-[600px] w-full rounded-2xl overflow-hidden shadow-2xl">
             <img 
-              src="https://images.unsplash.com/photo-1548123378-bde4eca81d2d?q=80&w=2070&auto=format&fit=crop" 
+              src="https://i.ibb.co/hRkZycFs/energy-image.jpg" 
               alt="Containerized power unit with solar panels in background" 
               className="w-full h-full object-cover"
             />

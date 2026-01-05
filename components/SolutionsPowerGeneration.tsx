@@ -111,7 +111,7 @@ const SolutionsPowerGeneration: React.FC = () => {
             <div className="grid grid-cols-2 gap-4 h-full">
               <div className="col-span-1 row-span-1 rounded-xl overflow-hidden h-40 lg:h-auto">
                 <img 
-                  src="https://images.unsplash.com/photo-1563289069-42b4742f1d53?q=80&w=1934&auto=format&fit=crop" 
+                  src="assets/industrial-generator.jpeg" 
                   alt="Industrial Generator Container" 
                   className="w-full h-full object-cover"
                 />
@@ -132,7 +132,7 @@ const SolutionsPowerGeneration: React.FC = () => {
               </div>
               <div className="col-span-1 row-span-1 rounded-xl overflow-hidden h-40 lg:h-auto">
                 <img 
-                  src="https://images.unsplash.com/photo-1581093583449-ed25213444e9?q=80&w=2070&auto=format&fit=crop" 
+                  src="assets/control-panel.jpeg" 
                   alt="HMI Control Panel" 
                   className="w-full h-full object-cover"
                 />

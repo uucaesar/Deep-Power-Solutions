@@ -17,7 +17,7 @@ const SolutionsMaintenance: React.FC = () => {
           {/* Image - Left */}
           <div className="order-2 lg:order-1 relative h-[600px] w-full rounded-2xl overflow-hidden shadow-2xl">
             <img 
-              src="https://images.unsplash.com/photo-1599587440331-b6a12b9d4c72?q=80&w=2070&auto=format&fit=crop" 
+              src="assets/support.jpeg" 
               alt="Technician performing maintenance on a large industrial generator" 
               className="w-full h-full object-cover"
             />

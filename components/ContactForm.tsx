@@ -28,7 +28,7 @@ const ContactForm: React.FC = () => {
                 </div>
                 <div className="ml-6">
                   <span className="block text-xl font-bold text-brand-dark-blue mb-1">Call Us</span>
-                  <p className="text-gray-600 text-lg">+27 11 123 4567</p>
+                  <p className="text-gray-600 text-lg">+27 76 737 1964</p>
                   <p className="text-sm text-gray-500 mt-1">Mon-Fri: 8am - 5pm</p>
                 </div>
               </div>
@@ -40,7 +40,7 @@ const ContactForm: React.FC = () => {
                 </div>
                 <div className="ml-6">
                   <span className="block text-xl font-bold text-brand-dark-blue mb-1">Email Us</span>
-                  <p className="text-gray-600 text-lg">info@deeppowersolutions.com</p>
+                  <p className="text-gray-600 text-lg">info@deeppowersolutions.co.za</p>
                   <p className="text-sm text-gray-500 mt-1">We respond within 24 hours</p>
                 </div>
               </div>
@@ -53,9 +53,7 @@ const ContactForm: React.FC = () => {
                 <div className="ml-6">
                   <span className="block text-xl font-bold text-brand-dark-blue mb-1">Visit Us</span>
                   <p className="text-gray-600 text-lg">
-                    123 Engineering Way,<br />
-                    Sandton, Johannesburg,<br />
-                    South Africa
+                    Stand No 20, Malelane, 1320
                   </p>
                 </div>
               </div>

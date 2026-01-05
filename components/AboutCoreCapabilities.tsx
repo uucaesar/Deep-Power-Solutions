@@ -23,7 +23,7 @@ const AboutCoreCapabilities: React.FC = () => {
           <div className="flex flex-col">
             <div className="h-64 w-full rounded-lg overflow-hidden mb-6 shadow-md">
               <img 
-                src="https://images.unsplash.com/photo-1583569527772-56360c49fa6b?q=80&w=2070&auto=format&fit=crop" 
+                src="assets/power-gen-image.jpeg" 
                 alt="Containerized power generator" 
                 className="w-full h-full object-cover"
               />
@@ -42,7 +42,7 @@ const AboutCoreCapabilities: React.FC = () => {
           <div className="flex flex-col">
             <div className="h-64 w-full rounded-lg overflow-hidden mb-6 shadow-md">
               <img 
-                src="https://images.unsplash.com/photo-1621255562767-33e387198758?q=80&w=2070&auto=format&fit=crop" 
+                src="assets/electrical-distribution.jpeg" 
                 alt="Electrical distribution switchgear panel" 
                 className="w-full h-full object-cover"
               />
@@ -61,7 +61,7 @@ const AboutCoreCapabilities: React.FC = () => {
           <div className="flex flex-col">
             <div className="h-64 w-full rounded-lg overflow-hidden mb-6 shadow-md bg-gray-100">
               <img 
-                src="https://images.unsplash.com/photo-1564619757656-7813a3424168?q=80&w=2070&auto=format&fit=crop" 
+                src="assets/bearing-motor.jpeg" 
                 alt="Large industrial metal bearing" 
                 className="w-full h-full object-cover"
               />
