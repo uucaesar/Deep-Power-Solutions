@@ -62,7 +62,7 @@ const AboutCoreCapabilities: React.FC = () => {
             <div className="h-64 w-full rounded-lg overflow-hidden mb-6 shadow-md bg-gray-100">
               <img 
                 src="/assets/bearing-motor.jpeg" 
-                alt="Large industrial metal bearing" 
+                alt="bearing-motor" 
                 className="w-full h-full object-cover"
               />
             </div>
