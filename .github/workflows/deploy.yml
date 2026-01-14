@@ -17,11 +17,9 @@ jobs:
 
     - name: 🔨 Install Dependencies
       run: npm install
-      working-directory: ./src   # <--- FIX 1: Tell npm where to look
 
     - name: 🏗️ Build Project
       run: npm run build
-      working-directory: ./src   # <--- FIX 2: Build inside the folder too
 
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
@@ -30,4 +28,4 @@ jobs:
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
         # FIX 3: Your dist folder is now inside src too!
-        local-dir: ./src/dist/
+        local-dir: ./dist/
