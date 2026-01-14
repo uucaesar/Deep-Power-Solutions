@@ -19,7 +19,7 @@ const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
       
       <div className="relative h-full flex items-center">
         <div className="bg-brand-dark-blue/70 backdrop-blur-[2px] w-full lg:w-3/5 xl:w-1/2 p-8 md:p-16 lg:p-24">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-black leading-tight tracking-tight uppercase">
+            <h1 className="text-4xl md:text-5xl lg:text-5xl font-black leading-tight tracking-tight">
                 Engineered, Reliable, and Intelligent Power Solutions for Critical Operations.
             </h1>
             <p className="mt-6 text-lg md:text-xl text-gray-200 max-w-2xl">
